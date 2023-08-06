@@ -7,7 +7,7 @@ GitHub Merge Guardian is a browser extension that helps to prevent incorrect mer
 - Configure multiple rules based on owner, repository name, base branch, compare branch, and merge strategy.
 - Use * as a wildcard in each item.
 - Change the merge button color to draw attention when the merge strategy doesn't match the configured rules.
-- Merge button color change only indicates the suggestion; you can still perform other merge strategies if needed.
+- To prevent accidental merging, the merge button is disabled when the merge strategy doesn't match the configured rules.
 - Customize the merge button color.
 
 ## Install

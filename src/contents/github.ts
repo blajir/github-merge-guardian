@@ -92,12 +92,14 @@ const applySetting = (settings: Setting[]) => {
       execElement?.classList.remove(styles.execButton)
     } else {
       selectElement?.classList.add(styles.selectButton)
+      if (selectElement !== null) selectElement.disabled = true
       selectElement?.addEventListener(
         "click",
         changeMenuButtonColorWarning,
         abortController ? { signal: abortController.signal } : undefined
       )
       execElement?.classList.add(styles.execButton)
+      if (execElement !== null) execElement.disabled = true
     }
   })
 
