@@ -1,15 +1,21 @@
 :root {
     --gmg-exec-button-color: #ff8c00;
     --gmg-select-button-color: #ff8c00;
+    --gmg-select-button-disabled-color: #7d8590;
     --gmg-menu-button-color: #ff8c00;
 }
 
-.execButton:not(:disabled) {
+.execButton {
     background-color: var(--gmg-exec-button-color) !important;
 }
 
-.selectButton:not(:disabled) {
+.selectButton,
+.selectButton > div {
     background-color: var(--gmg-select-button-color) !important;
+}
+
+.selectButton * {
+    color: var(--gmg-select-button-disabled-color) !important;
 }
 
 .menuButton {
