@@ -64,6 +64,8 @@ export const selectParentStrategyExecElement = () => {
 export const selectStrategyExecButtonElement = (storategy: Strategy) => {
   return document.querySelector<HTMLButtonElement>(
     `.merge-message .merge-box-button.${execButtonClass(storategy)}`
+  ) ?? document.querySelector<HTMLButtonElement>(
+    `.merge-message .${execButtonClass(storategy)}`
   )
 }
 
